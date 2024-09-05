@@ -100,13 +100,10 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
-  autoload -Uz compinit
-  compinit
-fi
+autoload -Uz compinit
+compinit
 
 
 # Auto-completion
@@ -114,7 +111,6 @@ fi
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 [[ $commands[kubecm] ]] && source <(kubecm completion zsh)
 [[ $commands[stern] ]] && source <(stern --completion zsh)
-[[ $commands[terraform] ]] && complete -C /opt/homebrew/bin/terraform terraform
 
 # Add aliases for nvim
 alias vim="nvim"
@@ -194,3 +190,4 @@ function yarn() {
     fi
 }
 
+complete -C /opt/homebrew/bin/terraform terraform
