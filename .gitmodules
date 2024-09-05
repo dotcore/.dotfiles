@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:dotcore/kickstart-modular.nvim.git
+[submodule ".fzf-git"]
+	path = .fzf-git
+	url = git@github.com:junegunn/fzf-git.sh.git
