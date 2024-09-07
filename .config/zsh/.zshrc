@@ -191,3 +191,4 @@ function yarn() {
 }
 
 complete -C /opt/homebrew/bin/terraform terraform
+source $HOME/.tokens

@@ -1,0 +1,7 @@
+# See: https://developer.1password.com/docs/cli/secret-references/
+
+export GITLAB_API_TOKEN_OX=op://Private/GitlabOX/personal-access-token
+export HOMEBREW_GITHUB_API_TOKEN="op://Private/GitHub/personal-access-token"
+export GITLAB_TOKEN=op://Private/Gitlab/personal-access-token
+export NPM_TOKEN=op://Private/Npmjs/personal-access-token
+
