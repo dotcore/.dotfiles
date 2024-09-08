@@ -47,6 +47,7 @@ export LANG=en_US.UTF-8
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=7
 export HOMEBREW_NO_EMOJI=1
+export HOMEBREW_NO_ENV_FILTERING=1
 export EDITOR=nvim
 export VISUAL=nvim
 export GITLAB_USERNAME=david.bauer
